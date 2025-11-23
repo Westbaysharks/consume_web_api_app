@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace ConsumeAPI // Byt eventuellt ut detta mot vad ditt projekt heter
+namespace ConsumeAPI
 {
     // Denna klass är ritningen för hur datan från GitHub ser ut
     public class Repository

@@ -32,7 +32,6 @@ try
             Console.WriteLine($"GitHub: {repo.GitHubUrl}");
             Console.WriteLine($"Description: {repo.Description}");
             Console.WriteLine($"Watchers: {repo.Watchers}");
-            // Formatera datumet om det finns ett, annars visa tomt
             Console.WriteLine($"Last push: {repo.LastPush}");
             Console.WriteLine();
         }
@@ -41,7 +40,6 @@ try
     // --- Zippopotam ---
     Console.WriteLine("--- Zippopotam ---");
 
-    // URL:en var korrekt, men modellen måste matcha svaret
     string zipUrl = "https://api.zippopotam.us/us/nj/montvale";
 
     var zipStream = await client.GetStreamAsync(zipUrl);
@@ -62,9 +60,6 @@ catch (Exception ex)
 }
 
 Console.ReadLine();
-
-// Se till att du har denna using högst upp i filen:
-// using System.Text.Json.Serialization;
 
 namespace ConsumeAPI
 {
