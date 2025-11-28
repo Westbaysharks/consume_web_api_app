@@ -3,7 +3,7 @@ using System.Net.Http.Json;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-// Vi skapar en HttpClient för att kunna göra anrop mot nätet.
+// Här skapar vi en HttpClient för att kunna göra anrop mot nätet.
 using HttpClient client = new HttpClient();
 
 // GitHub kräver en "User-Agent" header.
